@@ -48,3 +48,6 @@ plot(y)
 
 cat("\n\nScatterplot matrix\n")
 featurePlot(x = x, y = y, plot = "ellipse")
+
+cat("\n\nBox and whisker plots for each attribute\n")
+featurePlot(x = x, y = y, plot = "box")
