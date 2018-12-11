@@ -1,4 +1,5 @@
 library("caret")
+library("ellipse")
 
 data("iris")
 dataset <- iris
