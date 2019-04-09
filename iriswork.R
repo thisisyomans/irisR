@@ -100,3 +100,7 @@ dotplot(results)
 
 cat("\nSummarize best model\n")
 print(fit.lda)
+
+cat("\nEstimate skill of LDA on validation dataset")
+predictions <- predict(fit.lda, validation)
+confusionMatrix(predictions, validation$Species)
